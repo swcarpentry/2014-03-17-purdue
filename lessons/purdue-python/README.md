@@ -263,9 +263,9 @@ Here is an example of a Python IDE:
 
 <img style="width:600px;" src="http://software-carpentry.org/v5/novice/extras/img/debugger-screenshot.png">
 
-To open up an IPython notebook, go to the bash shell prompt and type
+To open up a notebook about the IPython interface, go to the bash shell prompt and type
 
-	In  [11]: ipython notebook
+	In  [11]: ipython notebook Introduction_to_IPython.ipynb
 	
 
 
