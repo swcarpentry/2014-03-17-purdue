@@ -265,22 +265,25 @@ Here is an example of a Python IDE:
 
 To open up a notebook about the IPython interface, go to the bash shell prompt and type
 
-	In  [11]: ipython notebook Introduction_to_IPython.ipynb
+	In  [11]: ipython notebook
+	
+Next, open up the notebook file titled "Introduction_to_IPython.ipynb"
 	
 
-
+Upcoming lessons over the next two days:
 <ol>
-  <li><a href="python-00-resize-image.ipynb">Resizing an Image</a></li>
-  <li><a href="python-01-functions.ipynb">Creating Functions</a></li>
-  <li><a href="python-02-loops-indexing.ipynb">Repeating Things</a></li>
-  <li><a href="python-03-conditionals-defensive.ipynb">Making Decisions and Programming Defensively</a></li>
-  <li><a href="python-04-files-lists.ipynb">Files and Lists</a></li>
-  <li><a href="python-05-errors.ipynb">Handling Errors</a></li>
-  <li><a href="python-06-testing.ipynb">Testing</a></li>
-  <li><a href="python-07-dla.ipynb">Growing a Program</a></li>
-  <li><a href="python-08-numpy.ipynb">Number Crunching</a></li>
-  <li><a href="python-09-cmdline.ipynb">Back to the Command Line</a></li>
- </ol>
+  <li>Resizing an Image <br>(<font color="#3A3">python-00-resize-image.ipynb</font>)</align></li><br>
+  <li>Creating Functions <br>(<font color="#3A3">python-01-functions.ipynb</font>)</li><br>
+  <li>Repeating Things <br>(<font color="#3A3">python-02-loops-indexing.ipynb</font>)</li><br>
+  <li>Making Decisions and Programming Defensively <br>(<font color="#3A3">python-03-conditionals-defensive.ipynb</font>)</li><br>
+  <li>Files and Lists <br>(<font color="#3A3">python-04-files-lists.ipynb</font>)</li><br>
+  <li>Handling Errors <br>(<font color="#3A3">python-05-errors.ipynb</font>)</li><br>
+  <li>Testing <br>(<font color="#3A3">python-06-testing.ipynb</font>)</li><br>
+  <li>Growing a Program <br>(<font color="#3A3">python-07-dla.ipynb</font>)</li><br>
+  <li>Number Crunching <br>(<font color="#3A3">python-08-numpy.ipynb</font>)</li><br>
+  <li>Back to the Command Line <br>(<font color="#3A3">python-09-cmdline.ipynb</font>)</li><br>
+  <li>Analyzing Data <br>(<font color="#3A3">python-10-pandas.ipynb</font>)</li>
+</ol>
 
 
 
