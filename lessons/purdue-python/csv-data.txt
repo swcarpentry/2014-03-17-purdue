@@ -1,0 +1,5 @@
+subject, age, gender, height
+JC, 14, F, 62
+KR, 41, M, 70
+AL, 23, F, 68
+RM, 21, M, 79
