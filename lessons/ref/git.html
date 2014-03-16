@@ -1,0 +1,308 @@
+---
+layout: lesson
+root: ../..
+title: Git Reference
+---
+<div class="row-fluid">
+    <div class="span6">
+    <h2>Getting Help</h2>
+    <table class="table table-striped">
+      <tr>
+	<td><code>git help command</code> or <code>git command --help</code></td>
+	<td>Show help option for a command</td>
+      </tr>
+      <tr>
+    </table>
+  </div>
+  <div class="span6">
+    <h2>Creating Repositories</h2>
+    <table class="table table-striped">
+      <tr>
+	<td><code>git init</code></td>
+	<td>Create a repository in the current directory</td>
+      </tr>
+      <tr>
+	<td><code>git clone</code> url location</td>
+	<td>Clone a remote repository into a subdirectory</td>
+      </tr>
+    </table>
+  </div>
+  <div class="span6">
+    <h2>File Operations</h2>
+    <table class="table table-striped">
+      <tr>
+	<td><code>git add</code> path</td>
+	<td>Add file or files in directory recursively</td>
+      </tr>
+      <tr>
+	<td><code>git rm</code> path</td>
+	<td>Remove file or directory from the working tree</td>
+      </tr>
+      <tr>
+	<td><code>git rm -f</code> path</td>
+	<td>Force deletion of file(s) from disk</td>
+      </tr>
+      <tr>
+	<td><code>git mv</code> path destination</td>
+	<td>Move file or directory to new location</td>
+      </tr>
+      <tr>
+	<td><code>git mv -f</code> path</td>
+	<td>Overwrite existing destination files</td>
+      </tr>
+      <tr>
+	<td><code>git checkout</code> file</td>
+	<td>Restore file from current branch</td>
+      </tr>
+      <tr>
+	<td><code>git checkout -f</code> file</td>
+	<td>Overwrite uncommitted local changes</td>
+      </tr>
+    </table>
+  </div>
+  <div class="span6">
+    <h2>Working Tree Operations</h2>
+    <table class="table table-striped">
+      <tr>
+	<td><code>git status</code></td>
+	<td>Show status of the working tree</td>
+      </tr>
+      <tr>
+	<td><code>git diff</code> path</td>
+	<td>Show diff of changes in the working tree</td>
+      </tr>
+      <tr>
+	<td><code>git diff HEAD</code> path</td>
+	<td>Show diff of stages and unstaged changes</td>
+      </tr>
+      <tr>
+	<td><code>git add path</code></td>
+	<td>Prepare file for commit</td>
+      </tr>
+      <tr>
+	<td><code>git reset HEAD</code> path</td>
+	<td>Unstage file for commit</td>
+      </tr>
+      <tr>
+	<td><code>git commit</code></td>
+	<td>Commit files that has been staged (with git-add)</td>
+      </tr>
+      <tr>
+	<td><code>git commit -a</code></td>
+	<td>Prepare all modified files</td>
+      </tr>
+      <tr>
+	<td><code>git reset --soft HEAD^</code></td>
+	<td>Undo commit & keep changes in the working tree</td>
+      </tr>
+      <tr>
+	<td><code>git reset --hard HEAD^</code></td>
+	<td>Reset the working tree to the last commit</td>
+      </tr>
+      <tr>
+	<td><code>git clean</code></td>
+	<td>Clean unknown files from the working tree</td>
+      </tr>
+    </table>
+  </div>
+  <div class="span6">
+    <h2>Examining Commit History</h2>
+    <table class="table table-striped">
+      <tr>
+	<td><code>git log</code> path</td>
+	<td>View commit log, optionally for specific path</td>
+      </tr>
+      <tr>
+	<td><code>git log</code> from to</td>
+	<td>View commit log for a given revision range</td>
+      </tr>
+      <tr>
+	<td><code>git log --stat</code></td>
+	<td>List statistics for each revision</td>
+      </tr>
+      <tr>
+	<td><code>git log -S</code> pattern</td>
+	<td>Search history for changes matching pattern</td>
+      </tr>
+      <tr>
+	<td><code>git blame</code> file</td>
+	<td>Show file annotated with line modifications</td>
+      </tr>
+    </table>
+  </div>
+  <div class="span6">
+    <h2>Working With Remote Repositories</h2>
+    <table class="table table-striped">
+      <tr>
+	<td><code>git fetch</code> remote location</td>
+	<td>Fetch changes from a remote repository</td>
+      </tr>
+      <tr>
+	<td><code>git pull</code> remote location</td>
+	<td>Fetch and merge changes from a remote repository</td>
+      </tr>
+      <tr>
+	<td><code>git push</code> remote location</td>
+	<td>Push changes to a remote repository</td>
+      </tr>
+      <tr>
+	<td><code>git remote</code></td>
+	<td>List remote repositories</td>
+      </tr>
+      <tr>
+	<td><code>git remote add remote url</code></td>
+	<td>Add remote to list of tracked repositories</td>
+      </tr>
+  </div>
+  </div>
+<div class="span6">
+    <h2>Working With Branches</h2>
+    <table class="table table-striped">
+      <tr>
+	<td><code>git branch</code></td>
+	<td>List local branches</td>
+      </tr>
+      <tr>
+	<td><code>git checkout</code> branch</td>
+	<td>Switch working tree to branch</td>
+      </tr>
+      <tr>
+	<td><code>git checkout -b</code> branch</td>
+	<td>Create branch before switching to it</td>
+      </tr>
+      <tr>
+	<td><code>git branch -f</code> branch rev</td>
+	<td>Overwrite the existing branch, but start from revision</td>
+      </tr>
+      <tr>
+	<td><code>git merge</code> branch</td>
+	<td>Merge changes from a branch</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+Tags:
+git tag name [revision]  Create tag for a given revision
+      -s   Sign tag with your private key using GPG
+      -l [pattern]   List tags, optionally matching pattern
+File status flags:  
+M modified   File has been modified
+C copy-edit  File has been copied and modified
+R rename-edit  File has been renamed and modified
+A added  File has been added
+D deleted  File has been deleted
+U unmerged   File has conflicts after a merge
+
+<div class="span6">
+    <h2>Using tags with git</h2>
+    <table class="table table-striped">
+      <tr>
+	<td><code>find start [options] [commands]</code></td>
+	<td>look for files or directories with specified properties and take specified actions</td>
+      </tr>
+      <tr>
+	<td><code>-type d</code></td>
+	<td>match directories</td>
+      </tr>
+      <tr>
+	<td><code>-type f</code></td>
+	<td>match files</td>
+      </tr>
+      <tr>
+	<td><code>-name 'pattern'</code></td>
+	<td>match things with specific names</td>
+      </tr>
+      <tr>
+	<td><code>-maxdepth n</code></td>
+	<td>maximum search depth</td>
+      </tr>
+      <tr>
+	<td><code>-mindepth n</code></td>
+	<td>minimum search depth</td>
+      </tr>
+      <tr>
+	<td><code>-print</code></td>
+	<td>print matches</td>
+      </tr>
+    </table>
+</div>
+
+<div class="span6">
+    <h2>Using tags with git</h2>
+    <table class="table table-striped">
+      <tr>
+	<td><code>find start [options] [commands]</code></td>
+	<td>look for files or directories with specified properties and take specified actions</td>
+      </tr>
+      <tr>
+	<td><code>-type d</code></td>
+	<td>match directories</td>
+      </tr>
+      <tr>
+	<td><code>-type f</code></td>
+	<td>match files</td>
+      </tr>
+      <tr>
+	<td><code>-name 'pattern'</code></td>
+	<td>match things with specific names</td>
+      </tr>
+      <tr>
+	<td><code>-maxdepth n</code></td>
+	<td>maximum search depth</td>
+      </tr>
+      <tr>
+	<td><code>-mindepth n</code></td>
+	<td>minimum search depth</td>
+      </tr>
+      <tr>
+	<td><code>-print</code></td>
+	<td>print matches</td>
+      </tr>
+    </table>
+</div>
+
+<div class="span6">
+    <h2>Finding Files</h2>
+    <table class="table table-striped">
+      <tr>
+	<td><code>find start [options] [commands]</code></td>
+	<td>look for files or directories with specified properties and take specified actions</td>
+      </tr>
+      <tr>
+	<td><code>-type d</code></td>
+	<td>match directories</td>
+      </tr>
+      <tr>
+	<td><code>-type f</code></td>
+	<td>match files</td>
+      </tr>
+      <tr>
+	<td><code>-name 'pattern'</code></td>
+	<td>match things with specific names</td>
+      </tr>
+      <tr>
+	<td><code>-maxdepth n</code></td>
+	<td>maximum search depth</td>
+      </tr>
+      <tr>
+	<td><code>-mindepth n</code></td>
+	<td>minimum search depth</td>
+      </tr>
+      <tr>
+	<td><code>-print</code></td>
+	<td>print matches</td>
+      </tr>
+    </table>
+</div>
+</div>
+
+
+Exporting and importing:
+git apply - < file   Apply patch from stdin
+git format-patch from[..to]  Format a patch with log message and diffstat
+git archive rev > file   Export snapshot of revision to file
+      --prefix=dir/  Nest all files in the snapshot in directory
+      --format=[tar|zip]   Specify archive format to use: tar or zip
+
+
