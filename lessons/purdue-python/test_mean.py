@@ -1,4 +1,4 @@
-from stats import mean
+from numpy import mean
 
 def test_mean():
     assert mean([0, 0, 0, 0]) == 0
